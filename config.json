@@ -1,4 +1,3 @@
-[
     {
         "name": "Adaptive N-Back",
         "exp_id": "adaptive_n_back",
@@ -43,5 +42,4 @@
                                         "display_element": "getDisplayElement",
                                         "on_trial_finish": "addID('adaptive_n_back')"}
                        }
-   }
-]
+   }u
