@@ -1,6 +1,6 @@
     {
         "name": "Adaptive N-Back",
-        "exp_id": "adaptive_n_back",
+        "exp_id": "adaptive-n-back",
         "cognitive_atlas_task_id": "trm_56674133b666c",
         "template":"jspsych",
         "contributors": [
