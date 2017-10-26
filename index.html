@@ -11,7 +11,7 @@
 
 <body>
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js'></script>
 <script src='jspsych/jspsych.js'></script>
 <script src='jspsych/plugins/jspsych-text.js'></script>
 <script src='jspsych/poldrack_plugins/jspsych-poldrack-text.js'></script>
@@ -32,10 +32,10 @@ $( document ).ready(function() {
              display_element: "getDisplayElement",
              fullscreen: true,
              on_trial_finish: function(data){
-               addID('adaptive_n_back')
+               addID('adaptive-n-back')
              },
              on_finish: function(data){
-                jsPsych.data.localSave('adaptive_n_back_results.csv', 'csv');
+                jsPsych.data.localSave('adaptive-n-back_results.csv', 'csv');
                 expfactory_finished = true;
               }
             });

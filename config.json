@@ -3,23 +3,6 @@
         "exp_id": "adaptive_n_back",
         "cognitive_atlas_task_id": "trm_56674133b666c",
         "template":"jspsych",
-        "run": [
-                "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js",
-                "jspsych/jspsych.js",
-                "jspsych/plugins/jspsych-text.js",
-                "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
-                "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
-                "jspsych/poldrack_plugins/jspsych-attention-check.js",
-                "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
-                "jspsych/poldrack_plugins/jspsych-poldrack-categorize.js",
-                "jspsych/plugins/jspsych-survey-text.js",
-                "jspsych/plugins/jspsych-call-function.js",
-                "jspsych/poldrack_plugins/poldrack_utils.js",
-                "experiment.js",
-                "jspsych.css",
-                "default_style.css",
-                "style.css"
-                ],
         "contributors": [
                          "Ian Eisenberg",
                          "Zeynep Enkavi",
