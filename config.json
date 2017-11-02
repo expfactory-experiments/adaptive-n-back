@@ -1,6 +1,7 @@
     {
         "name": "Adaptive N-Back",
         "exp_id": "adaptive-n-back",
+        "description": "The adaptive n-back is a test of cognitive control.",
         "url": "https://www.github.com/expfactory-experiments/adaptive-n-back",
         "cognitive_atlas_task_id": "trm_56674133b666c",
         "template":"jspsych",
