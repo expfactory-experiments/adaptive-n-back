@@ -1,30 +1,20 @@
-    {
-        "name": "Adaptive N-Back",
-        "exp_id": "adaptive-n-back",
-        "description": "The adaptive n-back is a test of cognitive control.",
-        "url": "https://www.github.com/expfactory-experiments/adaptive-n-back",
-        "cognitive_atlas_task_id": "trm_56674133b666c",
-        "template":"jspsych",
-        "contributors": [
-                         "Ian Eisenberg",
-                         "Zeynep Enkavi",
-                         "Patrick Bissett",
-                         "Vanessa Sochat",
-                         "Russell Poldrack"
-                        ], 
-        "time":20,
-        "reference": "http://www.sciencedirect.com/science/article/pii/S1053811905001424",
-        "notes": "reference for adaptive procedure: http://www.pnas.org/content/105/19/6829.full",
-        "publish":"True",
-        "experiment_variables": [{
-                                 "name":"credit_var",
-                                 "type":"credit",
-                                 "datatype": "boolean",
-                                 "description":"True if avg_rt > 200"
-                                  }],
-        "deployment_variables":{"jspsych_init":
-                                        {"fullscreen": true,
-                                        "display_element": "getDisplayElement",
-                                        "on_trial_finish": "addID('adaptive_n_back')"}
-                       }
-   }
+{
+    "name": "Adaptive N-Back",
+    "exp_id": "adaptive-n-back",
+    "url": "https://www.github.com/expfactory-experiments/adaptive-n-back",
+    "description": "The adaptive n-back is a test of cognitive control.",
+    "cognitive_atlas_task_id": "trm_56674133b666c",
+    "template":"jspsych",
+    "contributors": [
+                     "Ian Eisenberg",
+                     "Zeynep Enkavi",
+                     "Patrick Bissett",
+                     "Vanessa Sochat",
+                     "Russell Poldrack"
+                    ], 
+    "time":20,
+    "reference": [
+                   "http://www.sciencedirect.com/science/article/pii/S1053811905001424",
+                  "reference for adaptive procedure: http://www.pnas.org/content/105/19/6829.full"
+                 ],
+}
