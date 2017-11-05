@@ -35,9 +35,19 @@ $( document ).ready(function() {
                addID('adaptive-n-back')
              },
              on_finish: function(data){
-                jsPsych.data.localSave('adaptive-n-back_results.csv', 'csv');
-                expfactory_finished = true;
-              }
+                 var promise = new Promise(function(resolve, reject) {
+                     var data = jsPsych.data.dataAsJSON();
+                     resolve(data);
+                 })
+                 promise.then(function(data) {
+                     $.post("/save", {data: data}, function(){
+                        document.location = "/next";
+                     })
+                 }, function(err) {
+                      console.log(err);
+                       jsPsych.data.localSave('adaptive-n-back_results.csv', 'csv');
+                 });
+             }
             });
 });
 </script>
